@@ -1,0 +1,22 @@
+<html>
+<head>...</head>
+<body>
+    <h1>Hello World!</h1>
+    <button id="myCustomTrigger" type="button">Click me!</button>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://issues.rei.com/s/b8a1d9d756b053d81032fa85bd7b7c9a-T/-pkvz1r/813022/1r0xnic/4.0.5/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=9e0a3e45"></script>
+
+    <script type="text/javascript">
+        window.ATL_JQ_PAGE_PROPS = {
+            "triggerFunction": function(showCollectorDialog) {
+                // Requires that jQuery is available! 
+                jQuery("#myCustomTrigger").on("click", function(e) {
+                    e.preventDefault();
+                    showCollectorDialog();
+                });
+            }
+        };
+    </script>
+</body>
+</html>
