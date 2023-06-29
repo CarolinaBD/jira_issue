@@ -52,7 +52,16 @@
     <button id="myCustomTrigger" type="button">SUBMIT a CBCD Jira Enhacement Ticket</button>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="https://issues.rei.com/s/d41d8cd98f00b204e9800998ecf8427e-CDN/-pkvz1p/813022/1r0xnic/2.2.4.7/_/download/batch/com.atlassian.plugins.jquery:jquery/com.atlassian.plugins.jquery:jquery.js?collectorId=eadea324"></script><script type="text/javascript" src="https://issues.rei.com/s/0b6a56e7172ba8637fdfa29c86775c07-T/-pkvz1p/813022/1r0xnic/4.0.5/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=eadea324"></script>
+    <script type="text/javascript" src="https://issues.rei.com/s/d41d8cd98f00b204e9800998ecf8427e-CDN/-pkvz1p/813022/1r0xnic/2.2.4.7/_/download/batch/com.atlassian.plugins.jquery:jquery/com.atlassian.plugins.jquery:jquery.js?collectorId=9e0a3e45"></script><script type="text/javascript" src="https://issues.rei.com/s/0b6a56e7172ba8637fdfa29c86775c07-T/-pkvz1p/813022/1r0xnic/4.0.5/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=9e0a3e45"></script>
+
+    <script type="text/javascript">window.ATL_JQ_PAGE_PROPS =  {
+	"triggerFunction": function(showCollectorDialog) {
+		//Requires that jQuery is available! 
+		jQuery("#myCustomTrigger").click(function(e) {
+			e.preventDefault();
+			showCollectorDialog();
+		});
+	}};</script>
 
     <script type="text/javascript">
         window.ATL_JQ_PAGE_PROPS = {
