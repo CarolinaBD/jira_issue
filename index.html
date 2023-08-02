@@ -52,18 +52,16 @@
     <button id="myCustomTrigger" type="button">SUBMIT a CBCD Jira Enhacement Ticket</button>
 
   
-<script type="text/javascript" src="https://issues.rei.com/s/d41d8cd98f00b204e9800998ecf8427e-CDN/-pkvz1n/813022/1r0xnic/2.2.4.7/_/download/batch/com.atlassian.plugins.jquery:jquery/com.atlassian.plugins.jquery:jquery.js?collectorId=9e0a3e45"></script><script type="text/javascript" src="https://issues.rei.com/s/bafa8d854d9444de670e11b3acf7189c-T/-pkvz1n/813022/1r0xnic/4.0.5/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=9e0a3e45"></script>
+<script type="text/javascript" src="https://rei-coop-sandbox-473.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/-ia3qmx/b/4/c95134bc67d3a521bb3f4331beb9b804/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=b33ec8c0"></script>
 
-    <script type="text/javascript">
-        window.ATL_JQ_PAGE_PROPS = {
-            "triggerFunction": function(showCollectorDialog) {
-                // Requires that jQuery is available! 
-                jQuery("#myCustomTrigger").on("click", function(e) {
-                    e.preventDefault();
-                    showCollectorDialog();
-                });
-            }
-        };
-    </script>
+    <script type="text/javascript">window.ATL_JQ_PAGE_PROPS =  {
+	"triggerFunction": function(showCollectorDialog) {
+		//Requires that jQuery is available! 
+		jQuery("#myCustomTrigger").click(function(e) {
+			e.preventDefault();
+			showCollectorDialog();
+		});
+	}};</script>
+ 
 </body>
 </html>
